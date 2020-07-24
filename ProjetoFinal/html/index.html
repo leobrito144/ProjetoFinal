@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script type="text/javascript" src="js/login.js"></script>
+   
+</head>
+<body>
+    <div class="container"><!-- aqui comeca o layout da pagina -->
+        <div class="login"><!-- aqui comeca o layout da espaco para fazer login -->
+            <div class="content1"><!-- div da box laranja -->
+                <br><br>
+                <div class="logoitau">
+                    <br>
+                    <img style="width: 60px;" alt="Imagem nao encontrada" src="images/itau.png">
+                    
+                </div>
+                <div class="bemvindo">
+                    <br>
+                    <h4>Bem vindo!</h4>
+                    <h5>Sejam bem vindos á central de relátorios Itaumon</h5>
+                </div>
+            </div><!-- /div da box laranja -->
+            <div class="content2"><!-- div da box azul clara -->
+                <br><br>
+                <h6>Faça seu login:</h6>
+                <div class="campos"><!-- div para campos de login --><!-- Aqui é igual do que já foi explicado em aula -->
+                   <div class="row d-flex justify-content-center">
+                    <div class="col-4 text-center">
+                        <br><br>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1" style="width: 150px">RACF ou E-mail</span>
+                        </div>
+                        <input id="txtRacfOuEmail" type="text" class="form-control" placeholder="Digite seu e-mail ou racf" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1" style="width: 150px">Senha</span>
+                        </div>
+                        <input id="txtSenha" type="password" class="form-control" placeholder="Digite sua senha" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    
+                    <button onclick="logar()" type="button" class="btn btn-secondary btn-lg">Login</button>
+                    </div> 
+                </div><!-- /div para campos de login -->
+            </div><!-- /div da box azul clara -->
+        </div><!-- aqui termina o layout da espaco para fazer login -->
+    </div><!-- aqui termina o layout da pagina -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
