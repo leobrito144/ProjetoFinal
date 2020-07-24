@@ -1,5 +1,5 @@
 function popularTabela(lista){
-    var strArtistas =
+    var strItaumon =
         "<div class='row d-flex justify-content-center'><div class ='col-12'>" +
         "<table border='1' cellpadding=5 width ='100% align='center'>"+
         "<tr>"+
@@ -7,18 +7,18 @@ function popularTabela(lista){
         "</tr>";
         
         for(count=0;count<lista.length;count++){
-            strArtistas += 
+            strItaumon += 
                 "<tr>" +
                 "<td>" + lista[count].alarme + "</td>" +
                 "<td>" + lista[count].qtde + "</td>" +
                 "</tr>";
         }
 
-        strArtistas += "</table></div></div>";
-        document.getElementById("artistas").innerHTML = strArtistas;
+        strItaumon += "</table></div></div>";
+        document.getElementById("itaumon").innerHTML = strItaumon;
 }
 
-function carregarArtistas(){
+function carregarItaumon(){
     var dados = {
         inicio:document.getElementById("txtInicio").value,
         fim:document.getElementById("txtFim").value,

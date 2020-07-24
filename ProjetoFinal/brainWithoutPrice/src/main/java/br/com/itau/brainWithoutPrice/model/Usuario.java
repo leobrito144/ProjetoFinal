@@ -28,7 +28,7 @@ import javax.persistence.Table;
 		@Column (name="foto", length= 100)
 		private String foto;
 		
-		@Column (name="email", length=30)
+		@Column (name="email", length=70)
 		private String email;
 		
 		

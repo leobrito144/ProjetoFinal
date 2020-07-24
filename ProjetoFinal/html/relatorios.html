@@ -14,7 +14,7 @@
 
 
 </head>
-<body>
+<body onload="carregarUsuario()">
     <div class="container1"><!-- aqui comeca o layout da pagina -->
         <div class="telausuario"><!-- aqui comeca o layout da espaco para fazer login -->
            
@@ -23,7 +23,7 @@
                 <button onclick="logout()" type="button" class="btn btn-secondary btn-lg">logout</button><!-- botão logout -->
                 <div class="fotousuario">
                     <br>
-                    <img style="width: 60px;" alt="Imagem nao encontrada" src="images/user.png">        
+                    <img style="width: 120px;" alt="Imagem nao encontrada" src="images/user.png">        
                 </div>
                 <h4 id="dados"></h4>
             </div>
@@ -31,26 +31,42 @@
             <div class="content4">
                 
           <br><br>
-          <div class="form-group">
-          <label >Insira o data Inicial</label>
-          <input id="txtInicio" type="text" class="form-control">
-         </div>  
-         <div class="form-group">
-          <label >Insira a data Final</label>
-          <input id="txtFim" type="text" class="form-control">
-        </div>
-        <button onclick="carregarArtistas()" type="button" class="btn btn-secondary btn-lg">Login</button>
-        <div class="row d-flex justify-content-center">
+          <div class="row d-flex justify-content-center">
             <div class = "col-12">
-                <h3 class="text-center">Artistas Cadastrados</h3>
+                <h3 class="text-center">Relatorio de Eventos por Periodo</h3>
+            </div>
+            <br><br><br>
+        </div>
+          <div class="form-group">
+            <div class="row">
+                <div class="col-6">
+              <div class="form-group">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Insira o data Inicial</span>
+                    </div>
+                    <input id="txtInicio" type="text" class="form-control" placeholder="Digite a data inicial" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+             </div> 
+             </div> 
+             <div class="col-6">
+             <div class="form-group">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Insira a data Final</span>
+                    </div>
+                    <input id="txtFim" type="text" class="form-control" placeholder="Digite a data final" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                </div>
+            </div>
             </div>
         </div>
+        <button onclick="carregarItaumon()" type="button" class="btn btn-secondary btn-lg">Confirmar</button>
+        <br>
         <div class="row d-flex justify-content-center">
-                <div class="col-2"></div>
-                <div class = "col-8">
-                    <h6 id="artistas"></h6>
-                </div>
-                <div class="col-2"></div>
+                
+        <h6 id="itaumon"></h6>
+                
     </div>
 
     </div>
